@@ -9,8 +9,28 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Weather App</title>
   </head>
-  <body></body>
+  <body class="bg-gray-900 text-white">
+    <header class="bg-black w-full px-5 py-4 text-center">
+      <h1 class="text-2xl font-semibold">Weather App</h1>
+    </header>
+
+    <main class="w-100 m-auto mt-10 flex">
+      <input
+        type="text"
+        placeholder="Enter city name..."
+        class="border rounded-l-md px-4 py-2 border-gray-400 w-full"
+      />
+      <button
+        class="bg-white text-gray-900 px-2 cursor-pointer rounded-r-md"
+        onclick="searchWeather()"
+      >
+        Search
+      </button>
+    </main>
+
+    <section id="resultArea"></section>
+  </body>
   <script src="script.js"></script>
 </html>
